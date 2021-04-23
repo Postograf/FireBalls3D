@@ -140,7 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd283f0885659f34eacb9ec292f62007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bullet: {fileID: 568228045608345159, guid: 53ef8409cc672ec41b195f8e6a68e8c7, type: 3}
+  _bullets:
+  - {fileID: 568228045608345159, guid: 53ef8409cc672ec41b195f8e6a68e8c7, type: 3}
+  - {fileID: -3997645340369133618, guid: f09f4862cafd2fe4f89489ab2b431a58, type: 3}
   _shootPoint: {fileID: 966501143}
   _shootForce: 10
   _delayAfterShoot: 0.3

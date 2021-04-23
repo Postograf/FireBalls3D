@@ -30,5 +30,7 @@ public class Tower : MonoBehaviour
         {
             b.transform.position -= offset;
         }
+        
+        if(_blocks.Count == 0) Debug.Log("You won!");
     }
 }

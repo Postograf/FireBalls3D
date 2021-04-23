@@ -1,12 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
 public class Tank : MonoBehaviour
 {
-    [SerializeField] private Bullet _bullet;
+    [SerializeField] private Bullet[] _bullets;
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _shootForce;
     [SerializeField] private float _delayAfterShoot;
@@ -28,7 +25,7 @@ public class Tank : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(_bullet, _shootPoint.position, Quaternion.identity)
+        Instantiate(_bullets[Random.Range(0, _bullets.Length)], _shootPoint.position, Quaternion.identity)
             .GetComponent<Rigidbody>()
             .AddForce(Vector3.back * _shootForce, ForceMode.Impulse);
     }

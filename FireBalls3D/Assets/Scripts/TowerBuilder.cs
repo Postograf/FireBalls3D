@@ -4,6 +4,7 @@ using UnityEngine;
 public class TowerBuilder : MonoBehaviour
 {
     [SerializeField] private Block _blockPrefab;
+    [SerializeField] private Color[] _blockColors;
     [SerializeField] private int _blockCount;
     
     public List<Block> Build()
@@ -14,7 +15,12 @@ public class TowerBuilder : MonoBehaviour
         for (int i = 0; i < _blockCount; i++)
         {
             UpdateBuildPoint(ref currentBuildPoint);
-            blocks.Add(BuildBlock(currentBuildPoint));
+            var block = BuildBlock(currentBuildPoint);
+            
+            if(_blockColors.Length > 0)
+                block.SetColor(_blockColors[i % _blockColors.Length]);
+            
+            blocks.Add(block);
         }
 
         return blocks;
