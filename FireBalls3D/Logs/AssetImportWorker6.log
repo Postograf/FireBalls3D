@@ -9,17 +9,17 @@ D:\Unityar\2020.2.0f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker6
 -projectPath
 D:/My directory/UnityGames/FireBalls3D/FireBalls3D
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker6.log
 -srvPort
-49880
+50130
 Successfully changed project path to: D:/My directory/UnityGames/FireBalls3D/FireBalls3D
 D:/My directory/UnityGames/FireBalls3D/FireBalls3D
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 50.88 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 50.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path D:/Unityar/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,21 +35,49 @@ Initialize mono
 Mono path[0] = 'D:/Unityar/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unityar/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unityar/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unityar/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unityar/2020.2.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002888 seconds.
+Registered in 0.001641 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 45.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.417 seconds
+- Completed reload, in  2.564 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001932 seconds.
+Registered in 0.001606 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.084 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.5 MB.
+System memory in use after: 149.5 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 2.854200 ms (FindLiveObjects: 0.275100 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.129500 ms  DeleteObjects: 0.337400 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
